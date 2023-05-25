@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(12.jpg) center no-repeat;
+}
+
+.clock{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(aftenoon.gif) no-repeat center;
+    background-size: 250px 250px;
+    border: 15px;
+    border-radius: 10%;
+    box-shadow: 6px 6px 10px 3px black;
+}
+.clock:hover {
+  background: url(izy.jfif) no-repeat center;
+  background-size: 250px 250px;
+}
+
+.clock::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    z-index: 999;
+}
+
+.clock:hover::before{
+  background: url(fuck.png) center no-repeat;
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.hour,.min, .sec{
+    position: absolute;
+}
+.hour, .hr{
+    height: 130px;
+}
+.min, .mn{
+    height: 170px;
+}
+.sec, .sc{
+    height: 250px;
+}
+
+.hr{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+}
+.mn{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+}
+.sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+}
+
+.hr::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 80px;
+    background-color: #ffc600;
+    z-index: 0;
+    border-radius: 6px;
+}
+.mn::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background-color: #fff;
+    z-index: 11;
+    border-radius: 6px;
+}
+.sc::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background-color: #fff;
+    z-index: 12;
+    border-radius: 6px;
+
+}
