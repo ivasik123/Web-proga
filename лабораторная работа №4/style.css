@@ -1,0 +1,76 @@
+
+
+section{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: left;
+  justify-content: right;
+  font-family: Comic Sans;
+}
+section .container{
+  display: flex;
+  align-items :center;
+  justify-content: center;
+  height: 120px;
+  width: 350px;
+  background: url(2.gif) no-repeat center;
+  background-size: 350px 120px;
+  border-radius: 12px;
+}
+section .container:hover{
+  background: url(3.webp) no-repeat center;
+  background-size: 350px 120px;
+}
+section .container .time{
+  display: flex;
+  align-items: center;
+}
+.container .time .time-colon{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.time .time-colon .time-text{
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+}
+.time .time-colon .time-text,
+.time .time-colon .colon{
+  font-size: 35px;
+  font-weight: 60;
+  color: white;
+}
+.time .time-colon .colon{
+  font-size: 40px;
+  margin: 0 10px;
+}
+.time .time-colon .time-text .text{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@keyframes clr
+{
+  0%   {background-image: url(7.jpg);}
+  25%  {background-image: url(9.jpg);}
+  50%  {background-image: url(10.jpg);}
+  75%  {background-image: url(6.jfif);}
+  100% {background-image: url(5.jpg);}
+}
+body
+{
+  background-size: 100%;
+  background: center;
+  animation: clr 20s infinite;
+}
+.txt{
+  font-size: 30px;
+  font-weight: 900;
+  color: red;
+}
